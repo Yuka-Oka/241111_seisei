@@ -305,10 +305,11 @@ if uploaded_file:
     ppp = prom_hyouzi(self_sys_prompt)
 
     # javacして、解説生成
-    # user_nyuryoku, sys_response = file_jdoo(java_code, string_data)
+    user_nyuryoku, sys_response = file_jdoo(java_code, string_data)
 
     # javacしない、解説も生成しない
-    user_nyuryoku, sys_response = file_jdoo_dummy(java_code, string_data)
+    # user_nyuryoku, sys_response = file_jdoo_dummy(java_code, string_data)
+    
     temp = "ユーザー名: " + user_name + "\n使用日時　: " + japan_time_str + "\n使用ボタン: " + ppp + "\n"
     user_nyuryoku =  temp + user_nyuryoku
 
